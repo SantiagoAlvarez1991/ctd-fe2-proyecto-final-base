@@ -43,8 +43,7 @@ export const BotonBio = styled.button<Button>`
     padding: 1rem;
     margin: 1rem;
     font-family: "Homer Simpson Revised", sans-serif;
-    font-size: 1.4rem;
-    cursor: pointer;
+    font-size: 1.4rem;    
     ${(props) => props.isActive && `
         background-color: #fdd835;
         color: whitesmoke;
@@ -52,5 +51,8 @@ export const BotonBio = styled.button<Button>`
           -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
           -2px 0px 0 #000000, 0px -2px 0 #000000;
     `}
+    &:hover{
+        cursor: pointer;
+    }
 `
   

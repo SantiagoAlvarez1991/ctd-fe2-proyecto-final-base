@@ -1,18 +1,20 @@
-export interface INoticias {
-  id: number;
-  titulo: string;
-  descripcion: string;
-  fecha: Date;
-  esPremium: boolean;
-  imagen: string;
-}
+  export interface Noticias {
+    id: number;
+    titulo: string;
+    descripcion: string;
+    fecha: Date;
+    esPremium: boolean;
+    imagen: string;
+  }
+
+//import { Noticias } from "./types";
 
 const simularTiempoTranscurrido: (decrementMiliseconds: number) => Date = (
   decrementMiliseconds
 ) => {
   let time = new Date();
   time.setMilliseconds(time.getMilliseconds() - decrementMiliseconds);
-  return time;
+  return time
 };
 
 const data = [
@@ -62,7 +64,7 @@ const data = [
   },
 ];
 
-export const obtenerNoticias: () => Promise<INoticias[]> = async () => {
+export const obtenerNoticias: () => Promise<Noticias[]> = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);

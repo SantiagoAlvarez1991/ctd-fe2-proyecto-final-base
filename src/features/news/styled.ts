@@ -33,7 +33,7 @@ export const ListaNoticias = styled.div`
   padding: 0;
 `;
 
-export const TarjetaNoticia = styled.div`
+export const TarjetaNoticiaStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ export const BotonLectura = styled.button`
   bottom: 0px;
 `;
 
-export const ContenedorModal = styled.div`
+export const ContenedorModalStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
